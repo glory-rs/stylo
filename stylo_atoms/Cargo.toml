@@ -1,16 +1,18 @@
 [package]
-name = "stylo_atoms"
+rust-version = "1.95"
+name = "glory-stylo-atoms"
 version.workspace = true
 authors = ["The Servo Project Developers"]
 documentation = "https://docs.rs/stylo_atoms/"
 description = "Interned string type for the Servo and Stylo projects"
-repository = "https://github.com/servo/stylo"
+repository = "https://github.com/glory-rs/stylo"
 license = "MPL-2.0"
 edition = "2018"
 build = "build.rs"
 readme = "../README.md"
 
 [lib]
+name = "stylo_atoms"
 path = "lib.rs"
 
 [dependencies]

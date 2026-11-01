@@ -1,10 +1,9 @@
 [workspace]
-resolver = "2"
+resolver = "3"
 members = [
     "stylo_atoms",
     "stylo_dom",
     "malloc_size_of",
-    "rustfmt.toml",
     "selectors",
     "servo_arc",
     "style",
@@ -21,18 +20,18 @@ version = "0.22.0"
 
 [workspace.dependencies]
 # in-repo dependencies (separately versioned)
-selectors       = { version = "0.41.0", path = "./selectors" }
-servo_arc       = { version = "0.5.0",  path = "./servo_arc" }
-to_shmem        = { version = "0.6.0",  path = "./to_shmem", features = ["servo"] }
-to_shmem_derive = { version = "0.2.0",  path = "./to_shmem_derive" }
+selectors = { package = "glory-selectors", version = "0.41.0", path = "./selectors" }
+servo_arc = { package = "glory-servo-arc", version = "0.5.0",  path = "./servo_arc" }
+to_shmem = { package = "glory-to-shmem", version = "0.6.0",  path = "./to_shmem", features = ["servo"] }
+to_shmem_derive = { package = "glory-to-shmem-derive", version = "0.2.0",  path = "./to_shmem_derive" }
 
 # in-repo dependencies (main version)
-malloc_size_of  = { version = "0.22.0", path = "./malloc_size_of", package = "stylo_malloc_size_of", features = ["servo"] }
-static_prefs    = { version = "0.22.0", path = "./stylo_static_prefs", package = "stylo_static_prefs" }
-stylo_atoms     = { version = "0.22.0", path = "./stylo_atoms" }
-dom             = { version = "0.22.0", path = "./stylo_dom", package = "stylo_dom" }
-style_traits    = { version = "0.22.0", path = "./style_traits", features = ["servo"], package = "stylo_traits"}
-style_derive    = { version = "0.22.0", path = "./style_derive", package = "stylo_derive"}
-stylo           = { version = "0.22.0", path = "./style" }
+malloc_size_of = { version = "0.22.0", path = "./malloc_size_of", package = "glory-stylo-malloc-size-of", features = ["servo"] }
+static_prefs = { version = "0.22.0", path = "./stylo_static_prefs", package = "glory-stylo-static-prefs" }
+stylo_atoms = { package = "glory-stylo-atoms", version = "0.22.0", path = "./stylo_atoms" }
+dom = { version = "0.22.0", path = "./stylo_dom", package = "glory-stylo-dom" }
+style_traits = { version = "0.22.0", path = "./style_traits", features = ["servo"], package = "glory-stylo-traits"}
+style_derive = { version = "0.22.0", path = "./style_derive", package = "glory-stylo-derive"}
+stylo = { package = "glory-stylo", version = "0.22.0", path = "./style" }
 
 # Note: external dependencies not specified here because this file isn’t synchronized with Gecko

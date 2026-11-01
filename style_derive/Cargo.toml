@@ -1,14 +1,16 @@
 [package]
-name = "stylo_derive"
+rust-version = "1.95"
+name = "glory-stylo-derive"
 version.workspace = true
 authors = ["The Servo Project Developers"]
 license = "MPL-2.0"
-repository = "https://github.com/servo/stylo"
+repository = "https://github.com/glory-rs/stylo"
 edition = "2024"
 description = "Derive crate for Stylo CSS engine"
 readme = "../README.md"
 
 [lib]
+name = "stylo_derive"
 path = "lib.rs"
 proc-macro = true
 

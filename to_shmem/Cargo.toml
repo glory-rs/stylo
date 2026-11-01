@@ -1,9 +1,10 @@
 [package]
-name = "to_shmem"
+rust-version = "1.95"
+name = "glory-to-shmem"
 version = "0.6.0"
 authors = ["The Servo Project Developers"]
 license = "MPL-2.0"
-repository = "https://github.com/servo/stylo"
+repository = "https://github.com/glory-rs/stylo"
 edition = "2024"
 description = "Trait to write to a contiguous chunk of shared memory"
 

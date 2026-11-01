@@ -1,13 +1,15 @@
 [package]
-name = "stylo_malloc_size_of"
+rust-version = "1.95"
+name = "glory-stylo-malloc-size-of"
 version.workspace = true
 authors = ["The Servo Project Developers"]
 license = "MIT OR Apache-2.0"
-repository = "https://github.com/servo/stylo"
+repository = "https://github.com/glory-rs/stylo"
 description = "An allocator-agnostic crate for measuring the heap size of a value"
 edition = "2024"
 
 [lib]
+name = "stylo_malloc_size_of"
 path = "lib.rs"
 
 [features]

@@ -1,0 +1,21 @@
+{
+  "repository": "glory-rs/stylo",
+  "title": "Glory Stylo",
+  "tag_prefix": "glory-stylo-v",
+  "allowed_prefixes": [
+    "glory"
+  ],
+  "packages": [
+    "glory-servo-arc",
+    "glory-stylo-atoms",
+    "glory-stylo-derive",
+    "glory-stylo-static-prefs",
+    "glory-to-shmem-derive",
+    "glory-to-shmem",
+    "glory-selectors",
+    "glory-stylo-malloc-size-of",
+    "glory-stylo-dom",
+    "glory-stylo-traits",
+    "glory-stylo"
+  ]
+}

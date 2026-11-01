@@ -1,3 +1,12 @@
+# Glory-maintained Stylo
+
+Registry-publishable engine source for Glory 0.6.1 and Apace 0.3.0, based on
+`nicoburns/stylo` commit `78734bf554bb40af9dc11c0eedbe724f6055697c`.
+Package names use the `glory-` prefix; Rust library names and behavior are
+unchanged. This preserves the maintained Servo text-fill and background-clip
+features without replacing the upstream packages or requiring Cargo patches.
+Upstream history and MPL-2.0 license notices are retained.
+
 Stylo
 =====
 

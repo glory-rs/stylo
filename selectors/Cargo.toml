@@ -1,10 +1,11 @@
 [package]
-name = "selectors"
+rust-version = "1.95"
+name = "glory-selectors"
 version = "0.41.0"
 authors = ["The Servo Project Developers"]
 documentation = "https://docs.rs/selectors/"
 description = "CSS Selectors matching for Rust"
-repository = "https://github.com/servo/stylo"
+repository = "https://github.com/glory-rs/stylo"
 readme = "README.md"
 keywords = ["css", "selectors"]
 license = "MPL-2.0"

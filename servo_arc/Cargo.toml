@@ -1,9 +1,10 @@
 [package]
-name = "servo_arc"
+rust-version = "1.95"
+name = "glory-servo-arc"
 version = "0.5.0"
 authors = ["The Servo Project Developers"]
 license = "MIT OR Apache-2.0"
-repository = "https://github.com/servo/stylo"
+repository = "https://github.com/glory-rs/stylo"
 description = "A fork of std::sync::Arc with some extra functionality and without weak references"
 edition = "2024"
 readme = "../README.md"

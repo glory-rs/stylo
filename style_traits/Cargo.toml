@@ -1,9 +1,10 @@
 [package]
-name = "stylo_traits"
+rust-version = "1.95"
+name = "glory-stylo-traits"
 version.workspace = true
 authors = ["The Servo Project Developers"]
 license = "MPL-2.0"
-repository = "https://github.com/servo/stylo"
+repository = "https://github.com/glory-rs/stylo"
 edition = "2024"
 description = "Types used by the Stylo CSS engine"
 readme = "../README.md"
